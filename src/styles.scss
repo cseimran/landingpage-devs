@@ -3,16 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// *{
-//   padding: 0 auto !important;
-//   margin: 0 auto !important;
-//   list-style: none !important;
-// }
+
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  position: relative;
+}
+* {
   font-family: 'Lato', sans-serif;
 }
