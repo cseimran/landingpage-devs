@@ -1,28 +1,32 @@
-<!-- <mat-toolbar class="bg-transparent">
-  <div class="container mx-auto">
-    <div class="grid grid-cols-12 gap-4">
-      <div class="col-span-4">
-        <p class="text-black">aia<span class="text-xl text-red-600">D</span>evs</p>
-      </div>
-      <div class="col-span-8 flex justify-end">
-        <span class="pr-4 text-sm text-red-600 cursor-pointer hover:underline">Home</span>
-        <span class="px-4 text-sm hover:text-red-600 cursor-pointer hover:underline">About us</span>
-        <span class="px-4 text-sm hover:text-red-600 cursor-pointer hover:underline">Services</span>
-        <span class="px-4 text-sm hover:text-red-600 cursor-pointer hover:underline">Testimonial</span>
-        <span class="pl-4 text-sm hover:text-red-600 cursor-pointer hover:underline">Contact us</span>
-      </div>
-    </div>
+<nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+  <div>
+    <span class="cursor-pointer">
+      <img
+        class="h-6 inline"
+        src="/assets/home-image/aiaDevs-logo.png"
+        alt=""
+      />
+    </span>
+    <span>
+      <mat-icon></mat-icon>
+    </span>
   </div>
-</mat-toolbar> -->
-
-<mat-toolbar class="bg-white">
-  <div class="container flex mx-auto">
-    <span>aia<span class="text-red-500">D</span>evs</span>
-    <div class="spacer"></div>
-    <a mat-button href=""  color="accent">Home</a>
-    <a mat-button href="">About us</a>
-    <a mat-button href="">Services</a>
-    <a mat-button href="">Testimonial</a>
-    <a mat-button href="">Contact us</a>
-  </div>
-</mat-toolbar>
+  <ul class="md:flex md:items-center md:z-auto md:static absolute bg-blue-900 w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-96 transition-all ease-in">
+    <li class="mx-4 my-6 md:my-0">
+      <a class="cursor-pointer duration-500" href="">Home</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a class="cursor-pointer duration-500" href="">About</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a class="cursor-pointer duration-500" href="">Service</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a class="cursor-pointer duration-500" href="">Product</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a class="cursor-pointer duration-500" href="">Contact</a>
+    </li>
+    <button  class="mx-4 px-6 py-2 bg-slate-500 duration-500">LogIn</button>
+  </ul>
+</nav>
