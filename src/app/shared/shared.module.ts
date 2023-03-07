@@ -9,18 +9,26 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const commonModules = [
   MatIconModule,
   MatMenuModule,
   MatToolbarModule,
   MatButtonModule,
-  MatDividerModule
+  MatDividerModule,
+  MatListModule,
+  MatSidenavModule,
+  FlexLayoutModule
  ];
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SidenavComponent
   ],
   imports: [
     CommonModule,
@@ -30,6 +38,7 @@ const commonModules = [
   exports: [
     HeaderComponent,
     FooterComponent,
+    SidenavComponent,
     ...commonModules
   ],
 })
