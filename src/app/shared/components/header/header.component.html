@@ -1,20 +1,48 @@
-<mat-toolbar>
-  <div fxHide.gt-xs>
-    <button mat-icon-button (click)="onToggleSidenav()">
-      <mat-icon>menu</mat-icon>
-    </button>
+
+<div class="container mx-auto sticky top-0">
+  <div class="grid grid-cols-12">
+    <div class="col-span-12 md:col-start-2 md:col-end-12">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-12">
+          <mat-toolbar class="bg-gray-50">
+            <div fxHide.gt-xs>
+              <button mat-icon-button (click)="onToggleSidenav()">
+                <mat-icon>menu</mat-icon>
+              </button>
+            </div>
+            <div class="h-5 w-36 pr-10">
+              <img src="/assets/home-image/aiaDevs-logo.png" alt="">
+            </div>
+            <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+              <ul fxLayout fxLayoutGap="15px" class="navigation-items text-base font-semibold">
+                <li>
+                  <a pageScroll href="#card3" class="">About us</a>
+                </li>
+                <li>
+                  <a pageScroll href="#card3" class="">Service</a>
+                </li>
+                <li>
+                  <a pageScroll href="#card3" class="">Pricing</a>
+                </li>
+                <li>
+                <li>
+                  <a pageScroll href="#card3" class="">Contact</a>
+                </li>
+                <li>
+                  <a pageScroll href="#card3" class="">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+              <ul fxLayout fxLayoutGap="15px" class="navigation-items text-base">
+                <li>
+                  <a pageScroll href="#card3" class="border border-sky-700 rounded-full px-8 py-1 bg-transparent shadow-lg shadow-sky-500/50">Sign in</a>
+                </li>
+              </ul>
+            </div>
+          </mat-toolbar>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="h-6 w-36">
-    <img src="/assets/home-image/aiaDevs-logo.png" alt="">
-  </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-      <li>
-        <a pageScroll href="#card3" class="">Contact</a>
-      </li>
-      <li>
-        <a pageScroll href="#card">Projects</a>
-      </li>
-    </ul>
-  </div>
-</mat-toolbar>
+</div>
